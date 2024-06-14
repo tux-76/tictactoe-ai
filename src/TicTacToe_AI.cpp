@@ -173,7 +173,7 @@ float minimax(Game &game, float alpha = -2, float beta = 2) {
 
 int selectPlay(Game game) {
 	int player = game.turn;
-	int bestPlay;
+	int bestPlay = -1;
 	float bestValue = game.turn*-1;
 	float value;
 	for (int& move : game.getPossiblePlays()) {
